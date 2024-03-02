@@ -1,0 +1,80 @@
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgb(125, 195, 34) 0%,
+    rgb(75, 189, 179) 80%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+#form {
+  width: 400px;
+  margin: 10vh auto 5vh auto;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 30px;
+}
+h1 {
+  text-align: center;
+  color: rgb(75, 189, 179);
+}
+#form button {
+  background-color: rgb(75, 189, 179);
+  color: white;
+  border: 1px solid rgb(75, 189, 179);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
+.input_group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.input_group input {
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 3px;
+  padding: 5px;
+  border: 1px solid rgb(34, 193, 195);
+}
+.input_group input:focus {
+  outline: 0;
+}
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 2px;
+}
+.input_group.success input {
+  border-color: green;
+}
+.input_group.error input {
+  border-color: red;
+}
+
+dialog:-internal-dialog-in-top-layer::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+.customDialog {
+  background-color: rgb(0, 255, 0);
+  padding: 4rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+.dialogCloseBtn {
+  background-color: rgb(0, 255, 0);
+  border: none;
+  outline: none;
+  margin-left: 146px;
+  cursor: pointer;
+}
